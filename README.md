@@ -1,3 +1,6 @@
+[![Docker Pulls](https://img.shields.io/docker/pulls/itzg/ubuntu-remote-dev.svg)](https://hub.docker.com/r/itzg/ubuntu-remote-dev/)
+[![ci](https://github.com/itzg/docker-ubuntu-remote-dev/actions/workflows/ci.yml/badge.svg)](https://github.com/itzg/docker-ubuntu-remote-dev/actions/workflows/ci.yml)
+
 An Ubuntu based image that can be used with editors that support remote development over SSH.
 
 Validated with:
