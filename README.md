@@ -12,6 +12,8 @@ Includes:
 
 ## Usage
 
+**Image name**: `itzg/ubuntu-remote-dev:20.04-17`
+
 The image creates a user named `dev` with UID 1000, so assuming a local port binding of 2022 to the server's port, this can be used to connect to the container:
 
 ```shell
