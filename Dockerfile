@@ -17,14 +17,13 @@ RUN --mount=type=cache,target=/var/cache \
 RUN --mount=source=build,target=/build \
     /build/setup-user.sh
 
-COPY configs/sshd/* /etc/ssh/sshd_config.d/
+COPY configs/sshd/* /sshd/
 COPY run /run
 
-#USER 1000
+EXPOSE 2022
 
 VOLUME ${DEV_USER_HOME}
-#WORKDIR /workspace
-
-EXPOSE 2022
+VOLUME /sshd/configs.d
+VOLUME /host_keys
 
 ENTRYPOINT ["/run/run.sh"]

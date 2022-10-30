@@ -44,6 +44,14 @@ SSH server
 
 Home directory of user `dev`
 
+#### Pre-generated host keys
+
+The volume `/host_keys` can be mounted and any files named `ssh_host_*_key` and `ssh_host_*_key.pub` will be used by SSHD. 
+
+#### Extra SSHD configs
+
+The volume `/sshd/configs.d` can be mounted and any files named `*.conf` will be included into the SSHD configuration.
+
 ### Command line
 
 Any additional arguments will be passed to the `sshd` server command-line

@@ -27,3 +27,9 @@ DEBIAN_FRONTEND=noninteractive  \
       "temurin-${JDK_RELEASE}-jdk" \
       tini \
       tzdata
+
+# Let startup regenerate host keys
+rm -f /etc/ssh/ssh_host_*
+
+# Quieter login
+find /etc/update-motd.d -mindepth 1 -not -name 00-header -delete
